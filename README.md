@@ -13,6 +13,16 @@ A production-style Business Intelligence project that analyzes IKEA product pric
 - ✅ Pydantic data validation
 - ✅ Structured logging
 
+## 🚀 Live Dashboard
+
+**Try it live (no installation needed):**
+
+→ **[Open Interactive Dashboard](https://share.streamlit.io/batakers/IKEA-Global-Pricing-/main/dashboard/app.py)** ←
+
+Explore pricing across 41 countries, view affordability metrics, and analyze market segments in real-time.
+
+**Want to deploy your own?** See [DEPLOYMENT_CLOUD.md](DEPLOYMENT_CLOUD.md) for free cloud deployment options.
+
 ## Quick Start
 
 ### Local Development
@@ -299,12 +309,23 @@ Generated outputs:
 
 ## Getting Started
 
+### 🌐 Live Demo (No Setup Required)
+**[👉 Click here to try the dashboard now](https://share.streamlit.io/batakers/IKEA-Global-Pricing-/main/dashboard/app.py)**
+
+### 📚 Documentation
+
 See [DEPLOYMENT.md](DEPLOYMENT.md) for:
 - Docker setup
 - Local development
 - Environment variables
 - API reference
 - Troubleshooting
+
+See [DEPLOYMENT_CLOUD.md](DEPLOYMENT_CLOUD.md) for:
+- Deploy dashboard to Streamlit Community Cloud (FREE)
+- Deploy to Render or Railway (alternative options)
+- Add live URL to your CV/portfolio
+- Auto-updates with GitHub pushes
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for:
 - System design
