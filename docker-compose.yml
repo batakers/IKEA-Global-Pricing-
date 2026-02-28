@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build: .
+    container_name: ikea-pricing-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data
+      - ./notebooks/outputs:/app/notebooks/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: streamlit run dashboard/app.py --server.port=8501 --server.address=0.0.0.0
+
+  api:
+    build: .
+    container_name: ikea-pricing-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+    depends_on:
+      - dashboard
+
+  tests:
+    build: .
+    container_name: ikea-pricing-tests
+    volumes:
+      - ./data:/app/data
+      - ./tests:/app/tests
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests/ -v --cov=src --cov=notebooks
+
+volumes:
+  data:
+  outputs:
