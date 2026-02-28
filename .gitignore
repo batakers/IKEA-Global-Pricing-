@@ -37,9 +37,8 @@ wheels/
 .DS_Store
 
 # Project specific
-data/IKEA_product_catalog.csv
-data/processed_catalog.csv
-data/product_benchmark.csv
+# Note: For portfolio/demo, we commit processed data files
+# so dashboard works immediately on deployment
 notebooks/outputs/
 logs/
 *.log

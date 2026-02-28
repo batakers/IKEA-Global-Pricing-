@@ -1,13 +1,13 @@
 IKEA Global Pricing Strategy - Strategic Insights
 
 5 Strategic Business Insights:
-1. United States is the most expensive market with average price $201.88, while Slovenia is the cheapest at $152.43.
-2. Price positioning is most premium in United States (price index 1.14) and most value-oriented in Slovenia (price index 0.86).
-3. Affordability pressure is highest in Germany (index 0.0034) and lowest in United States (index 0.0025).
-4. United States shows the highest price dispersion (std 387.15), indicating mixed pricing tiers or assortment mix.
-5. United States has the widest assortment breadth (177 sub-categories), while digital availability is weakest in Croatia (88.9% online).
+1. Egypt is the most expensive market with average price $264.75, while Malaysia is the cheapest at $118.02.
+2. Price positioning is most premium in Egypt (price index 1.53) and most value-oriented in Malaysia (price index 0.68).
+3. Affordability pressure is highest in Egypt (index 0.0683) and lowest in Qatar (index 0.0017).
+4. Egypt shows the highest price dispersion (std 466.83), indicating mixed pricing tiers or assortment mix.
+5. United States has the widest assortment breadth (177 sub-categories), while digital availability is weakest in Egypt (66.9% online).
 
 3 Strategic Recommendations:
-1. Introduce market-specific entry-price SKUs in Germany and similar high-pressure markets to improve affordability without eroding global brand value.
-2. Review premium pricing justification in United States using competitor benchmarks and elasticity testing to protect volume growth.
-3. Prioritize e-commerce enablement in Croatia and low-online peers to expand reach, especially for categories with strong global demand.
+1. Introduce market-specific entry-price SKUs in Egypt and similar high-pressure markets to improve affordability without eroding global brand value.
+2. Review premium pricing justification in Egypt using competitor benchmarks and elasticity testing to protect volume growth.
+3. Prioritize e-commerce enablement in Egypt and low-online peers to expand reach, especially for categories with strong global demand.
