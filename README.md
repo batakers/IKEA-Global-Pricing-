@@ -21,6 +21,28 @@ A production-style Business Intelligence project that analyzes IKEA product pric
 
 Explore pricing across 41 countries, view affordability metrics, and analyze market segments in real-time.
 
+### Dashboard Preview
+
+#### Page 1: Executive Overview
+View key performance indicators, global pricing map, and market rankings at a glance.
+
+![Dashboard Key Metrics](docs/dashboard_key_metrics.png)
+
+#### Page 2: Pricing Strategy  
+Analyze market positioning and identify premium vs value-oriented segments.
+
+![Market Positioning](docs/dashboard_market_positioning.png)
+
+![Pricing Comparison](docs/dashboard_pricing_comparison.png)
+
+#### Page 3: Market Adaptation
+Evaluate affordability pressure, e-commerce maturity, and product assortment breadth.
+
+![Affordability Pressure](docs/dashboard_affordability_pressure.png)
+
+![Online Availability & Assortment](docs/dashboard_online_availability.png)
+![Assortment Breadth](docs/dashboard_assortment_breadth.png)
+
 **Want to deploy your own?** See [DEPLOYMENT_CLOUD.md](DEPLOYMENT_CLOUD.md) for free cloud deployment options.
 
 ## Quick Start
