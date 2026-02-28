@@ -45,6 +45,28 @@ docker-compose up -d
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions.
 
+## Data Sources
+
+The project uses three CSV files located in `data/` folder:
+
+| File | Description | Coverage |
+|------|-------------|----------|
+| `IKEA_product_catalog.csv` | IKEA product data with prices, ratings, categories by country | 46 countries, 366K+ rows |
+| `exchange_rate.csv` | Currency conversion rates to USD | 40 currencies |
+| `gdp_per_capita.csv` | GDP per capita for affordability analysis | 48 countries |
+
+**Note on Data:**
+- `IKEA_product_catalog.csv` is sourced from public IKEA data (Kaggle dataset or similar)
+- `exchange_rate.csv` and `gdp_per_capita.csv` are provided with realistic values for analysis
+- The pipeline merges these datasets and processes only countries with complete data
+- Currently processes **41 countries** with all reference data available
+
+**Running Your Own Data:**
+You can replace the CSV files in `data/` folder with:
+- Complete IKEA catalog from your source
+- Real exchange rates from your currency provider
+- Updated GDP data from World Bank API or similar
+
 ## Project Objectives
 
 - Compare IKEA pricing by country in standardized currency (USD)
@@ -212,12 +234,12 @@ pytest tests/test_data_validation.py -v --cov=src
 
 Generated outputs:
 
-1. **Cleaned Dataset** - `processed_catalog.csv` (163K rows)
-2. **Country Metrics** - `country_metrics.csv` (17 countries)
+1. **Cleaned Dataset** - `processed_catalog.csv` (366K rows)
+2. **Country Metrics** - `country_metrics.csv` (41 countries)
 3. **Market Clusters** - `clustering_results.csv`
 4. **Rankings**
-   - Top 10 most expensive
-   - Top 10 cheapest
+   - Top 10 most expensive (Egypt, Morocco, Jordan, ...)
+   - Top 10 cheapest (Malaysia, India, Thailand, ...)
    - Affordability pressure ranking
 5. **Visualizations**
    - Global pricing choropleth
@@ -294,11 +316,11 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for:
 
 ## Key Metrics
 
-- **Data Coverage**: 163,610 product records across 17 countries
-- **Global Avg Price**: ~$176.50 USD
-- **Price Range**: $152-$202 USD (cheapest to most expensive)
+- **Data Coverage**: 366,501 product records across 41 countries
+- **Global Avg Price**: ~$173 USD
+- **Price Range**: $118-$265 USD (Malaysia to Egypt)
 - **Market Segments**: 4 clusters (Premium, Value, Emerging, Niche)
-- **Pipeline Time**: ~15 seconds
+- **Pipeline Time**: ~20 seconds (end-to-end)
 - **Test Coverage**: 17 tests passing
 - **API Response Time**: <100ms
 
